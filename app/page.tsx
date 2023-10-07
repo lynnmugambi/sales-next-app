@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import headerImage from "@/public/header-image.jpg";
 
 export default function Home() {
   return (
@@ -119,6 +120,27 @@ export default function Home() {
       </nav>
 
       {/* --- Header --- */}
+      <header className="min-h-[88vh] w-full md:px-8 px-4 py-12 flex md:flex-row flex-col items-center justify-between">
+        <div className="md:w-[60%] w-full md:pr-6 md:mb-0 mb-8">
+          <h2 className="font-extrabold text-5xl mb-4">
+            Future-Proof Your Career with Top Digital Skills!
+          </h2>
+          <p className="opacity-60 mb-4">
+            Unlock your full potential of a future-proof career through the
+            power of top digital skills with our all-in-one growth package.
+          </p>
+          <button className="bg-purple-600 hover:bg-purple-800 w-[200px] text-white px-5 py-3 rounded-2xl text-lg font-semibold">
+            Get Started
+          </button>
+        </div>
+        <div className="md:w-[40%] w-full">
+          <Image
+            src={headerImage}
+            alt="Woman on laptop"
+            className="rounded-lg"
+          />
+        </div>
+      </header>
 
       {/* --- Features Section --- */}
 
