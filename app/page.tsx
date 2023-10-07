@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import headerImage from "@/public/header-image.jpg";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { IoDocumentTextSharp } from "react-icons/io5";
+import { BsFillClockFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -143,6 +146,49 @@ export default function Home() {
       </header>
 
       {/* --- Features Section --- */}
+      <section className="w-full min-h-[88vh] bg-purple-50 md:px-8 px-4 py-14 ">
+        <h2 className="font-extrabold text-3xl text-center mb-4">
+          Why Choose Us?
+        </h2>
+        <p className="opacity-50 text-center">
+          Unlock your full potential of a future-proof career
+        </p>
+        <p className="opacity-50 mb-14 text-center">
+          that surpasses your expectation.
+        </p>
+        <div className="flex w-full items-center justify-between md:space-x-6 md:flex-row flex-col">
+          <div className="md:w-1/3 md:mb-0 mb-6 w-full bg-white rounded-xl px-5 py-8 hover:border-[1px] hover:border-purple-600 hover:shadow-md">
+            <div className="rounded-full p-4 bg-purple-50 max-w-max mb-2">
+              <FaChalkboardTeacher className="text-2xl text-purple-800" />
+            </div>
+            <p className="font-bold text-lg mb-2">Expert instructors</p>
+            <p className="text-sm opacity-50">
+              Learn from industry experts, gaining unique insights which cannot
+              be found elsewhere.
+            </p>
+          </div>
+          <div className="md:w-1/3 md:mb-0 mb-6 w-full bg-white rounded-xl px-5 py-8 hover:border-[1px] hover:border-purple-600 hover:shadow-md">
+            <div className="rounded-full p-4 bg-purple-50 max-w-max mb-2">
+              <IoDocumentTextSharp className="text-2xl text-purple-800" />
+            </div>
+            <p className="font-bold text-lg mb-2">Hands-On Projects</p>
+            <p className="text-sm opacity-50">
+              Learn practical, real-world digital skills through relevant
+              projects and interactive sessions.
+            </p>
+          </div>
+          <div className="md:w-1/3 md:mb-0 mb-6 w-full bg-white rounded-xl px-5 py-8 hover:border-[1px] hover:border-purple-600 hover:shadow-md">
+            <div className="rounded-full p-4 bg-purple-50 max-w-max mb-2">
+              <BsFillClockFill className="text-2xl text-purple-800" />
+            </div>
+            <p className="font-bold text-lg mb-2">Lifetime Access</p>
+            <p className="text-sm opacity-50">
+              Unlimited lifetime access for continuous learning and personal
+              growth.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* --- Purchase Now Section--- */}
 
